@@ -141,6 +141,16 @@ class SigninVIew(View):
             
             return render(request,self.template_name,{"form":form_instance})
         
+        
+class CarouselView(View):
+    
+    template_name="carouselindex.html"
+    
+    def get(self,request,*args,**kwargs):
+        
+        qs=ShoeProduct.objects.all()
+        
+        return render(request,self.template_name,{"data":qs})
 class ProductListView(View):
     
     template_name="index.html"
@@ -223,7 +233,6 @@ class ItemDeleteView(View):
         BasketItem.objects.get(id=id).delete()
         
         return redirect("cart-summary")
-    
     
     
 import razorpay

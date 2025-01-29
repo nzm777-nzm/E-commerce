@@ -44,7 +44,9 @@ urlpatterns = [
     
     path("order/summary/",views.OrderSummaryView.as_view(),name="order-summary"),
     
-    path("payment/verify",views.PaymentVerificationView.as_view(),name="payment-varify")
+    path("payment/verify",views.PaymentVerificationView.as_view(),name="payment-varify"),
+    
+    path("carousel/",views.CarouselView.as_view(),name="carousel")
     
     
     

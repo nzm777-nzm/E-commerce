@@ -8,15 +8,162 @@
 
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- img cdn -->
     
+    <!-- img cdn -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .cart-icon {
+            font-size: 20px;
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background: white;
+            padding: 10px;
+            position: absolute;
+            top: 60px;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-menu li {
+            list-style: none;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .mobile-menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo">URBANKICKS</a>
+            <ul class="nav-links">
+                <li><a href="#">New & Featured</a></li>
+                <li><a href="#">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">category</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <button class="menu-toggle">&#9776;</button>
+            <a href="{%url 'cart-summary'%}" class="cart-icon">🛒</a>
+        </div>
+    </nav>
+
+    <ul class="mobile-menu">
+        <li><a href="#">New & Featured</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Sale</a></li>
+        <li><a href="#">Customize</a></li>
+    </ul>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
 </head>
 
 <body>
 
     <!-- start nav -->
 
-    <header class="bg-white">
+    <!-- <header class="bg-white">
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="md:flex md:items-center md:gap-12">
@@ -84,11 +231,10 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <!-- end nav -->
-
-    
+   
 
 
     {%block main_block%}

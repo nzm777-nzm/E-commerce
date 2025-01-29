@@ -12,13 +12,22 @@ class SignupForm(UserCreationForm):
         
         fields=["username","email","password1","password2","phone"]
         
+        widgets={
+
+            "username":forms.TextInput(attrs={'class':'form-control','placeholder':'username'}),
+            "email":forms.EmailInput(attrs={'class':'form-control', 'placeholder':'email'}),
+            "phone":forms.TextInput(attrs={'class':'form-control', 'placeholder':'phone'}),
+            "password1":forms.TextInput(attrs={'class':'form-control', 'placeholder':'password1'}),
+            "password2":forms.TextInput(attrs={'class':'form-control', 'placeholder':'password2'}),
+            
+        }
+        
 
 class LoginForm(forms.Form):
     
 
-        username=forms.CharField()
-        
-        password=forms.CharField()
+        username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Username'}), label='')
+        password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}), label='')
         
 class OrderForm(forms.ModelForm):
     
