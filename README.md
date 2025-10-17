@@ -30,7 +30,7 @@ This project demonstrates full-stack web development skills including **authenti
 | **IDE** | VS Code |
 
 <p Tech Stack align="center" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 15px;">
-  <img src="https://skillicons.dev/icons?i=python,django,,html,css,tailwind,js,mysql,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=python,django,html,css,tailwind,js,mysql,git,github,vscode" />
 </p>
 
 ---
