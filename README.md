@@ -29,8 +29,8 @@ This project demonstrates full-stack web development skills including **authenti
 | **Version Control** | Git, GitHub |
 | **IDE** | VS Code |
 
-<p align="center" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 15px;">
-  <img src="https://skillicons.dev/icons?i=python,django,react,html,css,tailwind,js,mysql,git,github,vscode" />
+<p Tech Stack align="center" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 15px;">
+  <img src="https://skillicons.dev/icons?i=python,django,,html,css,tailwind,js,mysql,git,github,vscode" />
 </p>
 
 ---
