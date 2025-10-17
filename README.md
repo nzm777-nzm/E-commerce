@@ -31,48 +31,5 @@ This project demonstrates full-stack web development skills including **authenti
 
 ---
 
-## ⚙️ Installation and Setup
-
-Follow these steps to run the project locally 👇
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/nzm777-nzm/simple-shoe-ecommerce.git
-cd simple-shoe-ecommerce
-
-| Home Page                                   | Product Page                                        | Cart Page                                   |
-| ------------------------------------------- | --------------------------------------------------- | ------------------------------------------- |
-| ![Home](static/images/screenshots/home.png) | ![Products](static/images/screenshots/products.png) | ![Cart](static/images/screenshots/cart.png) |
 
 
-
-🚀 Future Enhancements
-
-⭐ Product Review & Rating System
-
-👤 User Profile & Order History
-
-🎟️ Coupon & Discount Feature
-
-🤖 AI-based Shoe Recommendations
-
-🌐 React Frontend Integration
-
-
-
-Contributions, issues, and feature requests are welcome!
-Feel free to fork the repo and submit a pull request 🚀
-
-
----
-
-### ✅ What You’ll Get:
-- Clean structure 🧱  
-- Beautiful badges and icons 🎨  
-- Recruiter-friendly formatting 💼  
-- Easy setup instructions 🧩  
-- Upgrade-ready for React or AI features ⚙️  
-
----
-
-Would you like me to create a **React + Django version** of this README next (for your future upgraded version of the same shoe store project)?
