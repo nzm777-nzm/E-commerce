@@ -1,3 +1,15 @@
+<h1 align="center">👟 Simple Shoe E-Commerce Website</h1>
+<h3 align="center">🛍️ A Full Stack E-Commerce Web Application built with Django and MySQL</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Django-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%2C%20CSS%2C%20Bootstrap-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Database-MySQL-yellow?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/Payment-Razorpay-brightgreen?style=for-the-badge&logo=razorpay" />
+</p>
+
+
+
 ## 📖 Project Overview
 
 **Simple Shoe E-Commerce** is a web application that allows users to browse, search, and buy shoes online.  
