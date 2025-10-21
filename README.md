@@ -101,10 +101,6 @@ Page
 
 🎟️ Coupon & Discount Feature
 
-🤖 AI-based Shoe Recommendations
-
-🌐 React Frontend Integration
-
 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
